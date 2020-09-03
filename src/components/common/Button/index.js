@@ -41,8 +41,8 @@ const Button = ({ children, onClick, size, style }) => {
     <Clickable
       onClick={onClick}
       style={{
-        ...styles.button,
         ...smallStyle,
+        ...styles.button,
         ...style,
       }}
       activeOpacity={0.6}
@@ -56,13 +56,13 @@ const Button = ({ children, onClick, size, style }) => {
 
 const styles = StyleSheet.create({
   button: {
-    borderRadius: 5,
-    backgroundColor: primaryColor,
-    height: 50,
+    borderRadius: 10,
+    backgroundColor: "#F2F2F2",
+    height: 70,
+    width: 70,
     alignItems: "center",
-    justifyContent: "space-around",
-    elevation: 0,
     flexDirection: "row",
+    elevation: 5,
   },
   title: {
     fontSize: 16,
