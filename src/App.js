@@ -19,6 +19,8 @@ import microscopeSec from "../assets/images/microscopeSec.png";
 import currency from "../assets/images/currency.png";
 import currencySec from "../assets/images/currencySec.png";
 
+const fontSize = Dimensions.get("screen").width / 14;
+
 const App = () => {
   const [dark, setDark] = React.useState(false);
 
@@ -54,7 +56,7 @@ const App = () => {
               if (isNaN(n)) {
                 return (
                   <UI.Text
-                    size={40}
+                    size={30}
                     color={dark ? secondaryColorDark : primaryColorLight}
                     style={{ fontWeight: "bold" }}
                     key={i + n}
@@ -65,7 +67,7 @@ const App = () => {
               } else {
                 return (
                   <UI.Text
-                    size={40}
+                    size={30}
                     color={dark ? textColorDark : textColorLight}
                     style={{ fontWeight: "bold" }}
                     key={i + n}
@@ -80,7 +82,7 @@ const App = () => {
           <UI.Spacer large />
 
           <UI.Text
-            size={40}
+            size={30}
             color={dark ? secondaryColorDark : primaryColorLight}
             style={{ fontWeight: "bold" }}
           >
@@ -98,7 +100,7 @@ const App = () => {
             onClick={() => setDark(!dark)}
           >
             <UI.Icon
-              size={30}
+              size={fontSize}
               name="ios-moon"
               color={dark ? textColorDark : textColorLight}
             />
@@ -163,7 +165,7 @@ const App = () => {
                 <UI.Text
                   color={danger}
                   style={{ fontFamily: "magneto" }}
-                  size={40}
+                  size={30}
                 >
                   c
                 </UI.Text>
@@ -177,7 +179,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? secondaryColorDark : primaryColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   ()
                 </UI.Text>
@@ -191,7 +193,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? secondaryColorDark : primaryColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   %
                 </UI.Text>
@@ -205,7 +207,7 @@ const App = () => {
                 <UI.Text
                   color={textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   <UI.Icon
                     color={dark ? secondaryColorDark : primaryColorLight}
@@ -225,7 +227,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   7
                 </UI.Text>
@@ -239,7 +241,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   8
                 </UI.Text>
@@ -253,7 +255,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   9
                 </UI.Text>
@@ -267,7 +269,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? secondaryColorDark : primaryColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   x
                 </UI.Text>
@@ -282,7 +284,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   4
                 </UI.Text>
@@ -296,7 +298,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   5
                 </UI.Text>
@@ -310,7 +312,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   6
                 </UI.Text>
@@ -324,7 +326,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? secondaryColorDark : primaryColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   -
                 </UI.Text>
@@ -339,7 +341,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   1
                 </UI.Text>
@@ -353,7 +355,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   2
                 </UI.Text>
@@ -367,7 +369,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   3
                 </UI.Text>
@@ -381,7 +383,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? secondaryColorDark : primaryColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   +
                 </UI.Text>
@@ -397,7 +399,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   0
                 </UI.Text>
@@ -411,7 +413,7 @@ const App = () => {
                 <UI.Text
                   color={dark ? textColorDark : textColorLight}
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   ,
                 </UI.Text>
@@ -419,7 +421,7 @@ const App = () => {
 
               <UI.Button
                 style={{
-                  width: 70 * 2.5,
+                  width: (Dimensions.get("screen").width / 6) * 2.5,
                   backgroundColor: dark
                     ? secondaryColorDark
                     : primaryColorLight,
@@ -428,7 +430,7 @@ const App = () => {
                 <UI.Text
                   color="#fff"
                   style={{ fontFamily: "magneto" }}
-                  size={30}
+                  size={fontSize}
                 >
                   =
                 </UI.Text>
@@ -447,7 +449,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#C4C4C4",
   },
   controls: {
-    height: Dimensions.get("screen").height / 1.6,
+    height: Dimensions.get("screen").height / 1.7,
     width: "100%",
     backgroundColor: "#E0E0E0",
     elevation: 5,
@@ -456,9 +458,10 @@ const styles = StyleSheet.create({
     padding: 20,
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
+    overflow: "hidden",
   },
   screen: {
-    height: Dimensions.get("screen").height / 3.7,
+    height: Dimensions.get("screen").height / 4,
     alignItems: "flex-end",
     justifyContent: "center",
     paddingTop: 30,

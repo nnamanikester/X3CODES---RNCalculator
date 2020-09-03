@@ -1,13 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Dimensions } from "react-native";
 import { Text } from "../Text";
-import {
-  primaryColor,
-  inactiveColor,
-  grayColor,
-  textColor,
-} from "../variables";
 import { Clickable } from "../Clickable";
 
 let color = "#fff";
@@ -33,10 +27,11 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 10,
     backgroundColor: "#F2F2F2",
-    height: 70,
-    width: 70,
+    height: Dimensions.get("screen").height / 13,
+    width: Dimensions.get("screen").width / 6,
     alignItems: "center",
     flexDirection: "row",
+    justifyContent: "center",
     elevation: 5,
   },
   title: {
