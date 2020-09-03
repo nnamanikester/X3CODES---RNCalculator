@@ -6,6 +6,8 @@ export const secondaryColorDark = "#F5BF8E";
 export const textColorLight = "#4F4F4F";
 export const textColorDark = "#F2F2F2";
 export const danger = "#EB5757";
+export const buttonColorDark = "#051933";
+export const buttonColorLight = "#F2F2F2";
 
 export const lightColor = "#deeaf8";
 export const success = "#51A553";
