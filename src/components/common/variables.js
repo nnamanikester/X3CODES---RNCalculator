@@ -1,0 +1,10 @@
+export const primaryColor = "#023D81";
+export const secondaryColor = "#4EAEFF";
+export const inactiveColor = "rgba(36, 108, 194, 0.1)";
+export const lightColor = "#deeaf8";
+export const textColor = "#151522";
+export const success = "#51A553";
+export const warning = "#FF5F00";
+export const info = "#999999";
+export const danger = "#FF647C";
+export const grayColor = "#E4E4E4";
